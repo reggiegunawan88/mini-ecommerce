@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Carousel.scss'
 import Image from 'next/image'
 
@@ -8,6 +8,14 @@ interface Props {
 
 export default function Carousel({ images }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  const interval = 3000 // 3s interval for automatic slide
+
+  useEffect(() => {
+    const timer = setTimeout(() => goToNext(), interval)
+
+    return () => clearTimeout(timer)
+  }, [currentIndex])
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0
