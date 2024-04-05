@@ -1,0 +1,52 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 8px;
+  gap: 8px;
+
+  .product-image {
+    object-fit: contain;
+    align-self: center;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    .product-name {
+      margin: 0;
+      font-size: 12px;
+    }
+    
+    .product-price {
+      font-size: 14px;
+      color: 'black';
+      font-weight: bold;
+    }
+  }
+
+  .product-rating {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+
+    .product-score {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
+
+.text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // Set the number of lines to display
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

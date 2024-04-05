@@ -1,0 +1,40 @@
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carouselItem {
+  transition: transform 0.5s ease;
+  min-width: 100%;
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 100%;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
