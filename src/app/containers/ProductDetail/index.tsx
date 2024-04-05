@@ -14,7 +14,7 @@ const ProductDetail = ({ data }: Props) => {
     <div className="container">
       {/* Product image section */}
       <div className="image-container">
-        <Image alt="product-img" src={data.image} width={400} height={400} priority />
+        <Image alt="product-img" src={data.image} width={400} height={400} layout="responsive" priority />
       </div>
 
       <div className="product-detail-container">

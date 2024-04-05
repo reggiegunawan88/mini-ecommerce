@@ -34,7 +34,7 @@ export default function Carousel({ images }: Props) {
       <div className="carouselInner" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((path, index) => (
           <div className="carouselItem" key={index}>
-            <Image src={path} alt={`Slide ${index + 1}`} width={960} height={240} layout="responsive" />
+            <Image src={path} alt={`Slide ${index + 1}`} width={960} height={240} layout="responsive" priority />
           </div>
         ))}
       </div>

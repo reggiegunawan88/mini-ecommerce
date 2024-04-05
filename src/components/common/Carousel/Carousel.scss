@@ -27,7 +27,6 @@
   transform: translateY(-50%);
   background-color: #ddd;
   border: none;
-  padding: 10px;
   z-index: 100;
   border-radius: 100%;
 
@@ -36,5 +35,9 @@
   }
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
