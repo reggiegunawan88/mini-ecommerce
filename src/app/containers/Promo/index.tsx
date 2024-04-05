@@ -1,6 +1,6 @@
 'use client'
 
-import Carousel from '@/components/Carousel'
+import Carousel from '@/components/common/Carousel'
 import React from 'react'
 import './Promo.scss'
 

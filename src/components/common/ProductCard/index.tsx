@@ -2,6 +2,7 @@ import { IProductDetail } from '@/types/product'
 import Image from 'next/image'
 import React from 'react'
 import './ProductCard.scss'
+import Link from 'next/link'
 
 interface Props {
   data: IProductDetail
@@ -9,7 +10,7 @@ interface Props {
 
 const ProductCard = ({ data }: Props) => {
   return (
-    <div className="product-card">
+    <Link href={`/product/${data.id}`} className="product-card">
       <Image src={data.image} alt={data.title} className="product-image" width={150} height={150} />
       <div className="product-info">
         <span className="product-name text-truncate">{data.title}</span>
@@ -23,7 +24,7 @@ const ProductCard = ({ data }: Props) => {
         <div>-</div>
         <span>{data.rating.count} sold</span>
       </div>
-    </div>
+    </Link>
   )
 }
 

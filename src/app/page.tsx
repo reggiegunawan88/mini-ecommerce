@@ -3,10 +3,10 @@ import { ENV_VARS } from '@/constants/env-vars'
 import ProductList from './containers/ProductList'
 import { IProductDetail } from '@/types/product'
 import './page.scss'
-import Recommendations from './containers/Promo'
+import Promo from './containers/Promo'
 
 async function fetchProductsData() {
-  const result: IProductDetail[] = await fetcher(`${ENV_VARS.baseUrl}/products`)
+  const result = await fetcher<IProductDetail[]>(`${ENV_VARS.baseUrl}/products`)
   return result
 }
 
@@ -14,11 +14,9 @@ export default async function Home() {
   const products = await fetchProductsData()
 
   return (
-    <main className="homepage-container">
-      <div className="homepage-contents">
-        <Recommendations />
-        <ProductList products={products} />
-      </div>
-    </main>
+    <div className="home-container">
+      <Promo />
+      <ProductList products={products} />
+    </div>
   )
 }

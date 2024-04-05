@@ -1,14 +1,5 @@
-.homepage-container {
-  flex: 1;
-  overflow: auto;
-  padding: 16px;
-}
-
-.homepage-contents {
+.home-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
 }
