@@ -37,7 +37,12 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 - Products catalog page
 <p align="center">
-![alt text](image.png)
+![alt text](image-2.png)
+<p>
+
+- Product detail page
+<p align="center">
+![alt text](image-1.png)
 <p>
 
 ## Deployment
