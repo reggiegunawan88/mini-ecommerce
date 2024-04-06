@@ -25,13 +25,13 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ddd;
+  background-color: var(--lightgrey);
   border: none;
   z-index: 100;
   border-radius: 100%;
 
   &:hover {
-    background-color: #ddd;
+    background-color: var(--lightgrey);
   }
 }
 

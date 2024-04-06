@@ -20,6 +20,13 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Stacks
+
+1. NextJS v14 (https://nextjs.org/blog/next-14-1): Main framework for SSR and SSG.
+2. SASS: CSS pre-processing.
+3. TypeScript v5 (https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html): For static typing and type annotations needs.
+4. FakeStoreAPI (https://fakestoreapi.com/docs): For e-commerce mock API data.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

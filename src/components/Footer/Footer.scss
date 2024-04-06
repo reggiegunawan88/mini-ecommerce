@@ -2,8 +2,8 @@
   display: flex;
   padding: 12px;
   justify-content: center;
-  border-top: 1px solid #d3d3d3;
-  background: #ffffff;
+  border-top: 1px solid var(--border-primary);
+  background: var(--white);
 
   span {
     font-size: 12px;
