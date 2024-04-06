@@ -1,12 +1,20 @@
 .header-container {
   display: flex;
-  padding: 16px;
-  justify-content: center;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #d3d3d3;
   background: #ffffff;
 
-  span {
+  .header-title-label {
     font-weight: bold;
     font-size: 20px;
+    white-space: 'no-wrap';
+  }
+
+  .user-label {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
   }
 }

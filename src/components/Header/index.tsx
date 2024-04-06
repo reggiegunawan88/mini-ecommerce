@@ -1,13 +1,16 @@
 import React from 'react'
+import { IUser } from '@/types/user'
 import './Header.scss'
-import { useUserContext } from '@/store/context/UserContext'
 
-const Header = () => {
-  const { user } = useUserContext()
+interface Props {
+  user: IUser
+}
 
+const Header = ({ user }: Props) => {
   return (
     <div className="header-container">
-      <span>My E-Commerce</span>
+      <span className="header-title-label">My E-Commerce</span>
+      <span className="user-label">Hello, {`${user.name.firstname} ${user.name.lastname}`}</span>
     </div>
   )
 }

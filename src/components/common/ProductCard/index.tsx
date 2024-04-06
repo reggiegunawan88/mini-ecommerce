@@ -1,9 +1,9 @@
-import { IProductDetail } from '@/types/product'
-import Image from 'next/image'
 import React from 'react'
-import './ProductCard.scss'
+import Image from 'next/image'
+import { IProductDetail } from '@/types/product'
 import Link from 'next/link'
 import ProductRate from '../ProductRate'
+import './ProductCard.scss'
 
 interface Props {
   data: IProductDetail

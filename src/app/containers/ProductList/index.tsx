@@ -1,7 +1,7 @@
-import { IProductDetail } from '@/types/product'
 import React from 'react'
-import './ProductList.scss'
+import { IProductDetail } from '@/types/product'
 import ProductCard from '@/components/common/ProductCard'
+import './ProductList.scss'
 
 interface Props {
   products: IProductDetail[]

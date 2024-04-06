@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import './Carousel.scss'
 import Image from 'next/image'
+import './Carousel.scss'
 
 interface Props {
   images: string[]

@@ -1,7 +1,7 @@
 'use client'
 
-import Carousel from '@/components/common/Carousel'
 import React from 'react'
+import Carousel from '@/components/common/Carousel'
 import './Promo.scss'
 
 const Promo = () => {

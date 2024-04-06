@@ -2,11 +2,10 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import '@/styles/globals.scss'
 import fetcher from '@/services/fetcher'
 import { IUser } from '@/types/user'
 import { ENV_VARS } from '@/constants/env-vars'
-import { UserProvider } from '@/store/provider/UserProvider'
+import '@/styles/globals.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,13 +29,11 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <UserProvider initialUserData={user}>
-          <Header />
-          <div className="page-container">
-            <div className="page-content">{children}</div>
-          </div>
-          <Footer />
-        </UserProvider>
+        <Header user={user} />
+        <div className="page-container">
+          <div className="page-content">{children}</div>
+        </div>
+        <Footer />
       </body>
     </html>
   )
