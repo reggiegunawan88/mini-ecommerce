@@ -1,8 +1,9 @@
-import { IProductDetail } from '@/types/product'
-import Image from 'next/image'
 import React from 'react'
-import './ProductCard.scss'
+import Image from 'next/image'
+import { IProductDetail } from '@/types/product'
 import Link from 'next/link'
+import ProductRate from '../ProductRate'
+import './ProductCard.scss'
 
 interface Props {
   data: IProductDetail
@@ -17,10 +18,7 @@ const ProductCard = ({ data }: Props) => {
         <span className="product-price">${data.price}</span>
       </div>
       <div className="product-rating">
-        <div className="product-score">
-          <Image alt="star-icon" src="/icons/star.png" width={16} height={16} />
-          <span>{data.rating.rate}</span>
-        </div>
+        <ProductRate rate={data.rating.rate} />
         <div>-</div>
         <span>{data.rating.count} sold</span>
       </div>

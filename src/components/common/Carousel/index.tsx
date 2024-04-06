@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import './Carousel.scss'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import './Carousel.scss'
 
 interface Props {
   images: string[]
@@ -8,6 +8,14 @@ interface Props {
 
 export default function Carousel({ images }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  const interval = 3000 // 3s interval for automatic slide
+
+  useEffect(() => {
+    const timer = setTimeout(() => goToNext(), interval)
+
+    return () => clearTimeout(timer)
+  }, [currentIndex])
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0
@@ -26,7 +34,7 @@ export default function Carousel({ images }: Props) {
       <div className="carouselInner" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((path, index) => (
           <div className="carouselItem" key={index}>
-            <Image src={path} alt={`Slide ${index + 1}`} width={960} height={240} layout="responsive" />
+            <Image src={path} alt={`Slide ${index + 1}`} width={960} height={240} layout="responsive" priority />
           </div>
         ))}
       </div>

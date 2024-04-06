@@ -1,21 +1,19 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
+  border: 1px solid var(--lightgrey);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px var(--shadow-primary);
   padding: 8px;
   gap: 8px;
   text-decoration: none;
-  color: black;
+  color: var(--black);
+  background: var(--white);
+  transition: transform 0.3s ease-in-out;
 
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
+  &:hover {
+    transform: scale(1.1);
   }
 
   .product-image {
@@ -42,14 +40,9 @@
 
   .product-rating {
     display: flex;
+    gap: 4px;
     align-items: center;
     font-size: 12px;
-
-    .product-score {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
   }
 }
 

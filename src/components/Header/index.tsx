@@ -1,10 +1,16 @@
 import React from 'react'
+import { IUser } from '@/types/user'
 import './Header.scss'
 
-const Header = () => {
+interface Props {
+  user: IUser
+}
+
+const Header = ({ user }: Props) => {
   return (
     <div className="header-container">
-      <span>E-Commerce Mock</span>
+      <span className="header-title-label">My E-Commerce</span>
+      <span className="user-label">Hello, {`${user.name.firstname} ${user.name.lastname}`}</span>
     </div>
   )
 }

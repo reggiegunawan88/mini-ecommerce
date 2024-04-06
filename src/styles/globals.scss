@@ -7,6 +7,17 @@ body {
   margin: 0;
 }
 
+// Global variables for color theme
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --lightgrey: #dddddd;
+  --border-primary: #d3d3d3;
+  --divider: #f0f3f7;
+  --shadow-primary: rgba(0, 0, 0, 0.1);
+}
+
+// Styles for global layout
 .page-container {
   flex: 1;
   overflow: auto;
