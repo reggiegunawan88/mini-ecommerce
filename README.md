@@ -42,7 +42,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 - Product detail page
 <p align="center">
-![alt text](image-1.png)
+  <img src="https://github.com/reggiegunawan88/mini-ecommerce/assets/44907916/0dd326fb-c007-4ccb-ae33-2954a557569f">
 <p>
 
 ## Deployment
