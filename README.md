@@ -48,7 +48,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Deployment
 
 This application is deployed using Vercel.
-You can see the live production link here: https://weather-forecast-app-reggie.vercel.app
+You can see the live production link here: https://mini-ecommerce-reggie.vercel.app/
 
 Check [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
